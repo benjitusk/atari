@@ -1,4 +1,4 @@
-class Brick {
+class Ball {
 
     constructor(x_) {
         this.x = x_ * 45;
