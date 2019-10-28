@@ -10,7 +10,7 @@ class Ball {
 
     show() {
         fill(255);
-        noStroke();
+        //noStroke();
         ellipse(this.x, this.y, 14);
     }
 
