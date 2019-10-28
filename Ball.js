@@ -9,7 +9,7 @@ class Ball {
     }
 
     show() {
-        fill(this.c);
+        fill(255);
         noStroke();
         ellipse(this.x, this.y, 14);
     }
