@@ -17,6 +17,8 @@ function draw() {
     background(0);
     let padSize = 70;
     
+    ballCheck();
+    ball.update();
     ball.show();
     for (let brick of bricksA) {
         brick.show();
@@ -25,4 +27,13 @@ function draw() {
     stroke(255);
     strokeWeight(10);
     line(mouseX - padSize, height * 11 / 12, mouseX + padSize, height * 11 / 12);
+}
+
+function ballCheck() {
+    // if ball is @ pad || if ball is at brick
+        // bounce
+    if ((ball.y >= height * 11 / 12 && (ball.x <= mouseX + padSize && ball.x >= mouseX - padSize)) {
+        // Ball is @ pad
+        alert("bounce");
+    }
 }
