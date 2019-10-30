@@ -1,6 +1,7 @@
 let totalBricks = 15;
 let bricksA = [];
 let ball;
+let padSize = 70;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
@@ -15,7 +16,6 @@ function setup() {
 
 function draw() {
     background(0);
-    let padSize = 70;
     
     ballCheck();
     ball.update();
