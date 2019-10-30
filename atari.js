@@ -30,10 +30,13 @@ function draw() {
 }
 
 function ballCheck() {
-    // if ball is @ pad || if ball is at brick
-        // bounce
     if ((ball.y >= height * 11 / 12 && (ball.x <= mouseX + padSize && ball.x >= mouseX - padSize))) {
-        // Ball is @ pad
-        alert("bounce");
+        // Ball hit paddle
     }
+    
+    for (let i = 0; i< bricksA.length; i++) {
+        if (ball.x >= bricksA[i].x && ball.x <= bricksA[i].x + 50 && ball.y >= bricksA[i].y && ball.y <= bricksA[i].y + 30) {
+            alert("Brick Hit!");
+        }
+  }
 }
