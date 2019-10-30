@@ -18,7 +18,7 @@ function draw() {
     background(0);
     
     ballCheck();
-    ball.update();
+    //ball.update();
     ball.show();
     for (let brick of bricksA) {
         brick.show();
