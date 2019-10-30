@@ -32,7 +32,7 @@ function draw() {
 function ballCheck() {
     // if ball is @ pad || if ball is at brick
         // bounce
-    if ((ball.y >= height * 11 / 12 && (ball.x <= mouseX + padSize && ball.x >= mouseX - padSize)) {
+    if ((ball.y >= height * 11 / 12 && (ball.x <= mouseX + padSize && ball.x >= mouseX - padSize))) {
         // Ball is @ pad
         alert("bounce");
     }
