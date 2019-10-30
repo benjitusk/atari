@@ -14,10 +14,10 @@ function setup() {
 }
 
 function draw() {
+    background(0);
     let padSize = 70;
     
     ball.show();
-    background(0);
     for (let brick of bricksA) {
         brick.show();
     }
